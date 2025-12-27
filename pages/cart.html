@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина - Кирпич Ей</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="main"> 
+            <a href="../index.html"> 
+                <img src="../styles/logo.jpg" alt="На главную" width="160" height="160">
+                <span class="logo-text">Кирпич Ей</span>
+            </a> 
+        </div>
+        
+        <nav class="navigation">
+            <ul>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="cart.html" style="background-color: var(--primary-color);">Корзина (<span id="cart-count">0</span>)</a></li>
+                <li><a href="login.html">Вход</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <nav class="breadcrumbs">
+                <a href="../index.html">Главная</a> > 
+                <span>Корзина</span>
+            </nav>
+
+            <h1>Корзина покупок</h1>
+
+            <div id="cart-content">
+                <div class="empty-cart" id="empty-cart">
+                    <h2>Ваша корзина пуста</h2>
+                    <p>Добавьте товары из каталога</p>
+                    <a href="catalog.html" class="btn-primary">Перейти в каталог</a>
+                </div>
+
+                <div class="cart-items" id="cart-items" style="display: none;">
+                    <div class="cart-item">
+                        <img src="../styles/ceramic.jpg" alt="Товар" width="80" height="80">
+                        <div class="item-info">
+                            <h3>Кирпич керамический М150</h3>
+                            <p>28 ₽/шт</p>
+                        </div>
+                        <div class="item-quantity">
+                            <button onclick="changeQuantity(-1)">-</button>
+                            <span>1</span>
+                            <button onclick="changeQuantity(1)">+</button>
+                        </div>
+                        <div class="item-total">28 ₽</div>
+                        <button class="remove-btn" onclick="removeItem()">×</button>
+                    </div>
+                </div>
+
+                <div class="cart-summary" id="cart-summary" style="display: none;">
+                    <div class="summary-total">
+                        <strong>Итого: <span id="summary-total">0</span> ₽</strong>
+                    </div>
+                    <div class="summary-actions">
+                        <a href="catalog.html" class="btn-secondary">Продолжить покупки</a>
+                        <a href="checkout.html" class="btn-primary">Оформить заказ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Кирпич Ей</h3>
+                <p>Ваш надежный партнер в строительстве</p>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p>📞 +7 (900) 000-00-00</p>
+                <p>📧 info@kirpichey.ru</p>
+                <p>📍 г. Серпухов, Советская улица, 111</p>
+            </div>
+            <div class="footer-section">
+                <h3>Время работы</h3>
+                <p>Пн-Пт: 9:00-18:00</p>
+                <p>Сб: 10:00-16:00</p>
+                <p>Вс: выходной</p>
+            </div>
+            <div class="footer-section">
+                <div class="footer-links">
+                    <a href="about.html">О нас</a>
+                    <a href="contacts.html">Контакты</a>
+                    <a href="policy.html">Политика конфиденциальности</a>
+                    <a href="eula.html">Условия использования</a>
+                    <a href="support.html">Поддержка</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Кирпич Ей. Все права защищены.
+        </div>
+    </footer>
+    <script src="../scripts/catalog.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет - Кирпич Ей</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="main"> 
+            <a href="../index.html"> 
+                <img src="../styles/logo.jpg" alt="На главную" width="160" height="160">
+                <span class="logo-text">Кирпич Ей</span>
+            </a> 
+        </div>
+        
+        <nav class="navigation">
+            <ul>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="cart.html">Корзина (<span id="cart-count">0</span>)</a></li>
+                <li><a href="profile.html" style="background-color: var(--primary-color);">Профиль</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <nav class="breadcrumbs">
+                <a href="../index.html">Главная</a> > 
+                <span>Личный кабинет</span>
+            </nav>
+
+            <h1>Личный кабинет</h1>
+
+            <div class="profile-layout">
+                <aside class="profile-sidebar">
+                    <div class="user-info">
+                        <div class="user-avatar">
+                            <img src="../styles/people.png" alt="Аватар" width="80" height="80">
+                        </div>
+                        <div class="user-details">
+                            <h3>Иван Петров</h3>
+                            <p class="user-email">ivan.petrov@email.com</p>
+                            <p class="user-tier">⭐ Постоянный клиент</p>
+                        </div>
+                    </div>
+
+                    <nav class="profile-menu">
+                        <a href="profile.html" class="menu-item active">📊 Общая информация</a>
+                        <a href="order_history.html" class="menu-item">📦 История заказов</a>
+                        <a href="profile.html#personal" class="menu-item">👤 Личные данные</a>
+                        <a href="profile.html#addresses" class="menu-item">🏠 Адреса доставки</a>
+                        <a href="profile.html#security" class="menu-item">🔐 Безопасность</a>
+                        <a href="profile.html#notifications" class="menu-item">🔔 Уведомления</a>
+                        <a href="login.html" class="menu-item logout">🚪 Выйти</a>
+                    </nav>
+                </aside>
+
+                <div class="profile-content">
+                    <section id="overview" class="profile-section">
+                        <h2>Общая информация</h2>
+                        <div class="stats-cards">
+                            <div class="stat-card">
+                                <div class="stat-icon">📦</div>
+                                <div class="stat-info">
+                                    <div class="stat-number">3</div>
+                                    <div class="stat-label">Всего заказов</div>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">💰</div>
+                                <div class="stat-info">
+                                    <div class="stat-number">49 000 ₽</div>
+                                    <div class="stat-label">Общая сумма</div>
+                                </div>
+                            </div>
+                                <div class="stat-card">
+                                <div class="stat-icon">⭐</div>
+                                <div class="stat-info">
+                                    <div class="stat-number">1%</div>
+                                    <div class="stat-label">Текущая скидка</div>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">🎯</div>
+                                <div class="stat-info">
+                                    <div class="stat-number">15 000 ₽</div>
+                                    <div class="stat-label">До скидки 4%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="personal" class="profile-section">
+                        <h2>Личные данные</h2>
+                        <form class="profile-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstname">Имя *</label>
+                                    <input type="text" id="firstname" value="Иван" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastname">Фамилия *</label>
+                                    <input type="text" id="lastname" value="Петров" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" value="ivan.petrov@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Телефон *</label>
+                                <input type="tel" id="phone" value="+7 (900) 123-45-67" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="birthdate">Дата рождения</label>
+                                <input type="date" id="birthdate" value="1985-06-15">
+                            </div>
+                            <button type="submit" class="btn-primary">Сохранить изменения</button>
+                        </form>
+                    </section>
+
+                    <section id="addresses" class="profile-section">
+                        <h2>Адреса доставки</h2>
+                        <div class="addresses-list">
+                            <div class="address-card">
+                                <div class="address-header">
+                                    <h4>Основной адрес</h4>
+                                    <span class="default-badge">По умолчанию</span>
+                                </div>
+                                <p>г. Серпухов, Советская улица, 77</p>
+                                <p>📞 +7 (900) 123-45-67</p>
+                                <div class="address-actions">
+                                    <button class="btn-small">Изменить</button>
+                                    <button class="btn-small btn-secondary">Удалить</button>
+                                </div>
+                            </div>
+                            <div class="address-card">
+                                <div class="address-header">
+                                    <h4>Дополнительный адрес</h4>
+                                </div>
+                                <p>г. Серпухов, Советская улица, 87</p>
+                                <p>📞 +7 (900) 123-45-67</p>
+
+                                <div class="address-actions">
+                                    <button class="btn-small">Сделать основным</button>
+                                    <button class="btn-small">Изменить</button>
+                                    <button class="btn-small btn-secondary">Удалить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn-primary">+ Добавить новый адрес</button>
+                    </section>
+
+                    <section id="security" class="profile-section">
+                        <h2>Безопасность</h2>
+                        <div class="security-settings">
+                            <div class="security-item">
+                                <div class="security-info">
+                                    <h4>Смена пароля</h4>
+                                    <p>Последнее изменение: 15.12.2024</p>
+                                </div>
+                                <button class="btn-primary">Изменить пароль</button>
+                            </div>
+                            <div class="security-item">
+                                <div class="security-info">
+                                    <h4>Двухфакторная аутентификация</h4>
+                                    <p>Не активирована</p>
+                                </div>
+                                <button class="btn-secondary">Включить</button>
+                            </div>
+                            <div class="security-item">
+                                <div class="security-info">
+                                    <h4>Активные сессии</h4>
+                                    <p>Текущее устройство • Chrome • Windows</p>
+                                </div>
+                                <button class="btn-secondary">Показать все</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Кирпич Ей</h3>
+                <p>Ваш надежный партнер в строительстве</p>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p>📞 +7 (900) 000-00-00</p>
+                <p>📧 info@kirpichey.ru</p>
+                <p>📍 г. Серпухов, Советская улица, 111</p>
+            </div>
+            <div class="footer-section">
+                <h3>Время работы</h3>
+                <p>Пн-Пт: 9:00-18:00</p>
+                <p>Сб: 10:00-16:00</p>
+                <p>Вс: выходной</p>
+            </div>
+            <div class="footer-section">
+                <div class="footer-links">
+                    <a href="about.html">О нас</a>
+                    <a href="contacts.html">Контакты</a>
+                    <a href="policy.html">Политика конфиденциальности</a>
+                    <a href="eula.html">Условия использования</a>
+                    <a href="support.html">Поддержка</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Кирпич Ей. Все права защищены.
+        </div>
+    </footer>
+    <script src="../scripts/catalog.js"></script>
+</body>
+</html>

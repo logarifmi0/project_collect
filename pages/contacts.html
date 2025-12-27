@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Кирпич Ей</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="main"> 
+            <a href="../index.html"> 
+                <img src="../styles/logo.jpg" alt="На главную" width="160" height="160">
+                <span class="logo-text">Кирпич Ей</span>
+            </a> 
+        </div>
+        
+        <nav class="navigation">
+            <ul>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contacts.html" style="background-color: var(--primary-color);">Контакты</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="cart.html">Корзина (<span id="cart-count">0</span>)</a></li>
+                <li><a href="login.html">Вход</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <nav class="breadcrumbs">
+                <a href="../index.html">Главная</a> > 
+                <span>Контакты</span>
+            </nav>
+
+            <h1>Контакты</h1>
+
+            <div class="contacts-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h2>📞 Телефоны</h2>
+                        <p><strong>Отдел продаж:</strong> +7 (900) 000-00-00</p>
+                        <p><strong>Техническая поддержка:</strong> +7 (900) 00-00-10</p>
+                        <p><strong>Факс:</strong> +7 (00000) 0-00-20</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <h2>📧 Электронная почта</h2>
+                        <p><strong>Общие вопросы:</strong> info@kirpichey.ru</p>
+                        <p><strong>Отдел продаж:</strong> sales@kirpichey.ru</p>
+                        <p><strong>Поддержка:</strong> support@kirpichey.ru</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <h2>📍 Адрес</h2>
+                        <p><strong>Юридический адрес:</strong><br>
+                        142253, г. Серпухов, ул. Советская, 111</p>
+                        <p><strong>Склад:</strong><br>
+                        г. Серпухов, промзона, складской комплекс №3</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <h2>🕒 Режим работы</h2>
+                        <p><strong>Офис:</strong> Пн-Пт: 9:00-18:00</p>
+                        <p><strong>Склад:</strong> Пн-Сб: 8:00-17:00</p>
+                        <p><strong>Доставка:</strong> Ежедневно 8:00-20:00</p>
+                    </div>
+                </div>
+
+                <div class="map-section">
+                    <h2>Мы на карте</h2>
+                    <div class="map-placeholder">
+                        <img src="../styles/map.png" alt="Карта проезда" width="600" height="400">
+                        <p>г. Серпухов, ул. Советская, 111</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-section">
+                    <h2>Напишите нам</h2>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Ваше имя *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                        <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Тема сообщения</label>
+                            <select id="subject" name="subject">
+                                <option value="general">Общий вопрос</option>
+                                <option value="sales">Вопрос по покупке</option>
+                                <option value="support">Техническая поддержка</option>
+                                <option value="cooperation">Сотрудничество</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Сообщение *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Кирпич Ей</h3>
+                <p>Ваш надежный партнер в строительстве</p>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p>📞 +7 (900) 000-00-00</p>
+                <p>📧 info@kirpichey.ru</p>
+                <p>📍 г. Серпухов, Советская улица, 111</p>
+            </div>
+            <div class="footer-section">
+                <h3>Время работы</h3>
+                <p>Пн-Пт: 9:00-18:00</p>
+                <p>Сб: 10:00-16:00</p>
+                <p>Вс: выходной</p>
+            </div>
+            <div class="footer-section">
+                <div class="footer-links">
+                    <a href="about.html">О нас</a>
+                    <a href="contacts.html">Контакты</a>
+                    <a href="policy.html">Политика конфиденциальности</a>
+                    <a href="eula.html">Условия использования</a>
+                    <a href="support.html">Поддержка</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Кирпич Ей. Все права защищены.
+        </div>
+    </footer>
+    <script src="../scripts/catalog.js"></script>
+</body>
+</html>

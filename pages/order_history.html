@@ -1,0 +1,221 @@
+> Дмитрий:
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>История заказов - Кирпич Ей</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="main"> 
+            <a href="../index.html"> 
+                <img src="../styles/logo.jpg" alt="На главную" width="160" height="160">
+                <span class="logo-text">Кирпич Ей</span>
+            </a> 
+        </div>
+        
+        <nav class="navigation">
+            <ul>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="cart.html">Корзина (<span id="cart-count">0</span>)</a></li>
+                <li><a href="profile.html">Профиль</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <nav class="breadcrumbs">
+                <a href="../index.html">Главная</a> > 
+                <a href="profile.html">Профиль</a> > 
+                <span>История заказов</span>
+            </nav>
+
+            <h1>История заказов</h1>
+
+            <div class="order-history">
+                <div class="orders-filter">
+                    <button class="filter-btn active">Все заказы</button>
+                    <button class="filter-btn">Ожидают оплаты</button>
+                    <button class="filter-btn">В обработке</button>
+                    <button class="filter-btn">Доставляются</button>
+                    <button class="filter-btn">Завершены</button>
+                </div>
+
+                <div class="orders-list">
+                    <div class="order-card">
+                        <div class="order-header">
+                            <div class="order-info">
+                                <h3>Заказ #2025-001</h3>
+                                <p class="order-date">15 января 2025</p>
+                            </div>
+                            <div class="order-status status-delivered">
+                                Доставлен
+                            </div>
+                            <div class="order-total">
+                                26 600 ₽
+                            </div>
+                        </div>
+                        
+                        <div class="order-items">
+                            <div class="order-item">
+                                <img src="../styles/ceramic2.jpg" alt="Кирпич" width="60" height="60">
+                                <div class="item-details">
+                                    <h4>Кирпич керамический М150</h4>
+                                    <p>28 ₽/шт × 500 шт</p>
+                                </div>
+                                <div class="item-total">14 000 ₽</div>
+                            </div>
+                            <div class="order-item">
+                                <img src="../styles/ceramic3.jpg" alt="Кирпич" width="60" height="60">
+                                <div class="item-details">
+                                    <h4>Кирпич керамический М150</h4>
+                                    <p>28 ₽/шт × 450 шт</p>
+                                </div>
+                                <div class="item-total">12 600 ₽</div>
+                            </div>
+                        </div>
+                        
+                        <div class="order-actions">
+                            <button class="btn-secondary">Повторить заказ</button>
+                            <button class="btn-secondary">Оставить отзыв</button>
+                            <button class="btn-secondary">Скачать чек</button>
+                        </div>
+                    </div>
+
+                    <div class="order-card">
+                        <div class="order-header">
+                            <div class="order-info">
+                                <h3>Заказ #2025-002</h3>
+                                <p class="order-date">10 января 2025</p>
+                            </div>
+                            <div class="order-status status-processing">
+                                В обработке
+                            </div>
+                            <div class="order-total">
+                                14 000 ₽
+                            </div>
+                        </div>
+                        
+                        <div class="order-items">
+                            <div class="order-item">
+                                <img src="../styles/ceramic.jpg" alt="Кирпич" width="60" height="60">
+                                <div class="item-details">
+                                    <h4>Кирпич керамический М150</h4>
+                                    <p>28 ₽/шт × 500 шт</p>
+                                </div>
+                                <div class="item-total">14 000 ₽</div>
+                            </div>
+                        </div>
+                        
+                        <div class="order-actions">
+                            <button class="btn-secondary">Отменить заказ</button>
+                            <button class="btn-primary">Оплатить</button>
+                        </div>
+                    </div>
+
+                    <div class="order-card">
+                        <div class="order-header">
+                            <div class="order-info">
+                                <h3>Заказ #2024-156</h3>
+                                <p class="order-date">20 декабря 2024</p>
+                            </div>
+                            <div class="order-status status-delivered">
+                                Доставлен
+                            </div>
+                            <div class="order-total">
+                                8 400 ₽
+                            </div>
+                        </div>
+                        
+                        <div class="order-items">
+                            <div class="order-item">
+                                <img src="../styles/ceramic1.jpg" alt="Кирпич" width="60" height="60">
+                                <div class="item-details">
+                                    <h4>Кирпич керамический М150</h4>
+                                    <p>28 ₽/шт × 300 шт</p>
+                                </div>
+                                <div class="item-total">8 400 ₽</div>
+                            </div>
+                        </div>
+                        
+                        <div class="order-actions">
+                            <button class="btn-secondary">Повторить заказ</button>
+                            <button class="btn-secondary">Оставить отзыв</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <button class="page-btn disabled">← Назад</button>
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <button class="page-btn">Вперед →</button>
+                </div>
+            </div>
+
+            <div class="order-stats">
+                <h2>Статистика заказов</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Всего заказов</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">49 000 ₽</div>
+                        <div class="stat-label">Общая сумма</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">1 750</div>
+                        <div class="stat-label">Куплено кирпичей</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">1%</div>
+                        <div class="stat-label">Ваша скидка</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Кирпич Ей</h3>
+                <p>Ваш надежный партнер в строительстве</p>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p>📞 +7 (900) 000-00-00</p>
+                <p>📧 info@kirpichey.ru</p>
+                <p>📍 г. Серпухов, Советская улица, 111</p>
+            </div>
+            <div class="footer-section">
+                <h3>Время работы</h3>
+                <p>Пн-Пт: 9:00-18:00</p>
+                <p>Сб: 10:00-16:00</p>
+                <p>Вс: выходной</p>
+            </div>
+            <div class="footer-section">
+                <div class="footer-links">
+                    <a href="about.html">О нас</a>
+                    <a href="contacts.html">Контакты</a>
+                    <a href="policy.html">Политика конфиденциальности</a>
+                    <a href="eula.html">Условия использования</a>
+                    <a href="support.html">Поддержка</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Кирпич Ей. Все права защищены.
+        </div>
+    </footer>
+    <script src="../scripts/catalog.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кирпич керамический - Кирпич Ей</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="main"> 
+            <a href="../index.html"> 
+                <img src="../styles/logo.jpg" alt="На главную" width="160" height="160">
+                <span class="logo-text">Кирпич Ей</span>
+            </a> 
+        </div>
+        
+        <nav class="navigation">
+            <ul>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="cart.html">Корзина (<span id="cart-count">0</span>)</a></li>
+                <li><a href="login.html">Вход</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <nav class="breadcrumbs">
+                <a href="../index.html">Главная</a> > 
+                <a href="catalog.html">Каталог</a> > 
+                <span>Кирпич керамический</span>
+            </nav>
+
+            <div class="product-detail">
+                <div class="product-gallery">
+                    <img src="../styles/ceramic.jpg" alt="Кирпич керамический" class="main-image">
+                    <div class="thumbnails">
+                        <img src="../styles/ceramic1.jpg" alt="Вид 1" width="80" height="60">
+                        <img src="../styles/ceramic2.jpg" alt="Вид 2" width="80" height="60">
+                        <img src="../styles/ceramic3.jpg" alt="Вид 3" width="80" height="60">
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <h1>Кирпич керамический полнотелый М150</h1>
+                    <div class="product-price">28 ₽/шт</div>
+                    
+                    <div class="product-meta">
+                        <span class="rating">★★★★☆ (4.5)</span>
+                        <span class="in-stock">✓ В наличии</span>
+                    </div>
+
+                    <div class="product-description">
+                        <p>Высококачественный керамический кирпич для строительства несущих стен и перегородок. Идеально подходит для частного и многоэтажного строительства.</p>
+                    </div>
+
+                    <div class="product-specs">
+                        <h3>Характеристики:</h3>
+                        <ul>
+                            <li><strong>Марка прочности:</strong> М150</li>
+                            <li><strong>Размер:</strong> 250×120×65 мм</li>
+                            <li><strong>Вес:</strong> 3.5 кг</li>
+                            <li><strong>Морозостойкость:</strong> F50</li>
+                            <li><strong>Производитель:</strong> BRAER</li>
+                            <li><strong>Страна производства:</strong> Россия</li>
+                        </ul>
+                    </div>
+
+                    <div class="purchase-section">
+                        <div class="quantity-selector">
+                            <label for="quantity">Количество:</label>
+                            <input type="number" id="quantity" value="1" min="1" max="1000">
+                            <span>шт</span>
+                        </div>
+                        
+                        <div class="total-price">
+                            Итого: <span id="total">28</span> ₽
+                        </div>
+
+                        <button class="btn-primary btn-large" onclick="addToCartFromProductPage()">
+                            Добавить в корзину
+                        </button>
+                        
+                        <div class="delivery-info">
+                            <p>🚚 Бесплатная доставка при заказе от 10 000 ₽</p>
+                            <p>⏱ Доставим за 1-2 дня</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="product-reviews">
+                <h2>Отзывы о товаре</h2>
+                <div class="reviews-list">
+                    <div class="review">
+                        <div class="review-header">
+                            <span class="review-author">Иван Петров</span>
+                            <span class="review-rating">★★★★★</span>
+                            <span class="review-date">15.01.2025</span>
+                        </div>
+                        <p>Отличный кирпич! Строил дом, очень доволен качеством. Доставка быстрая.</p>
+                    </div>
+                    <div class="review">
+                        <div class="review-header">
+                            <span class="review-author">Мария Сидорова</span>
+                            <span class="review-rating">★★★★☆</span>
+                            <span class="review-date">10.01.2025</span>
+                        </div>
+                        <p>Хорошее качество за разумные деньги. Рекомендую!</p>
+                    </div>
+                </div>
+                <a href="reviews.html" class="btn-secondary">Все отзывы</a>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Кирпич Ей</h3>
+                <p>Ваш надежный партнер в строительстве</p>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p>📞 +7 (900) 000-00-00</p>
+                <p>📧 info@kirpichey.ru</p>
+                <p>📍 г. Серпухов, Советская улица, 111</p>
+            </div>
+            <div class="footer-section">
+                <h3>Время работы</h3>
+                <p>Пн-Пт: 9:00-18:00</p>
+                <p>Сб: 10:00-16:00</p>
+                <p>Вс: выходной</p>
+            </div>
+            <div class="footer-section">
+                <div class="footer-links">
+                    <a href="pages/about.html">О нас</a>
+                    <a href="pages/contacts.html">Контакты</a>
+                    <a href="pages/policy.html">Политика конфиденциальности</a>
+                    <a href="pages/eula.html">Условия использования</a>
+                    <a href="pages/support.html">Поддержка</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Кирпич Ей. Все права защищены.
+        </div>
+    </footer>
+    <script src="../scripts/catalog.js"></script>
+</body>
+</html>

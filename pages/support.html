@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поддержка - Кирпич Ей</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="main"> 
+            <a href="../index.html"> 
+                <img src="../styles/logo.jpg" alt="На главную" width="160" height="160">
+                <span class="logo-text">Кирпич Ей</span>
+            </a> 
+        </div>
+        
+        <nav class="navigation">
+            <ul>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="cart.html">Корзина (<span id="cart-count">0</span>)</a></li>
+                <li><a href="support.html" style="background-color: var(--primary-color);">Поддержка</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <nav class="breadcrumbs">
+                <a href="../index.html">Главная</a> > 
+                <span>Поддержка</span>
+            </nav>
+
+            <h1>Центр поддержки</h1>
+
+            <div class="support-layout">
+                <aside class="support-sidebar">
+                    <div class="support-quick-links">
+                        <h3>Быстрые ссылки</h3>
+                        <a href="#faq" class="quick-link">❓ Частые вопросы</a>
+                        <a href="#contact" class="quick-link">📞 Связаться с нами</a>
+                        <a href="#guides" class="quick-link">📚 Руководства</a>
+                        <a href="#status" class="quick-link">🔍 Статус заказа</a>
+                    </div>
+
+                    <div class="support-contacts">
+                        <h3>Экстренная помощь</h3>
+                        <div class="contact-item">
+                            <strong>📞 Телефон поддержки</strong>
+                            <p>+7 (900) 000-00-00</p>
+                            <small>Круглосуточно</small>
+                        </div>
+                        <div class="contact-item">
+                            <strong>📧 Email поддержки</strong>
+                            <p>support@kirpichey.ru</p>
+                            <small>Ответ в течение 2 часов</small>
+                        </div>
+                    </div>
+                </aside>
+
+                <div class="support-content">
+                    <section class="help-search">
+                        <h2>Как мы можем вам помочь?</h2>
+                        <div class="search-box">
+                            <input type="text" placeholder="Введите ваш вопрос...">
+                            <button class="btn-primary">Найти</button>
+                        </div>
+                    </section>
+
+                    <section id="faq" class="faq-section">
+                        <h2>Часто задаваемые вопросы</h2>
+                        <div class="faq-categories">
+                            <button class="faq-category active">Доставка</button>
+                            <button class="faq-category">Оплата</button>
+                            <button class="faq-category">Возврат</button>
+                            <button class="faq-category">Товары</button>
+                            <button class="faq-category">Аккаунт</button>
+                        </div>
+
+                        <div class="faq-list">
+                            <div class="faq-item">
+                                <div class="faq-question">
+
+                                <h4>Как осуществляется доставка?</h4>
+                                    <span class="faq-toggle">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Доставка осуществляется нашим собственным транспортом в течение 1-3 дней. Для крупных заказов возможна доставка манипулятором.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h4>Какие способы оплаты доступны?</h4>
+                                    <span class="faq-toggle">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Мы принимаем наличные, банковские карты, безналичный расчет для юридических лиц.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h4>Можно ли вернуть товар?</h4>
+                                    <span class="faq-toggle">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Возврат возможен в течение 14 дней при сохранении товарного вида упаковки.</p>
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h4>Как рассчитать необходимое количество кирпича?</h4>
+                                    <span class="faq-toggle">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Наши менеджеры помогут вам с расчетами. Также вы можете использовать наш онлайн-калькулятор.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="contact" class="contact-support">
+                        <h2>Свяжитесь с поддержкой</h2>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">💬</div>
+                                <h4>Онлайн-чат</h4>
+                                <p>Мгновенная помощь в реальном времени</p>
+                                <button class="btn-primary">Начать чат</button>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">📞</div>
+                                <h4>Телефон</h4>
+                                <p>+7 (900) 000-00-00</p>
+                                <small>Круглосуточная поддержка</small>
+                                <button class="btn-secondary">Позвонить</button>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">📧</div>
+                                <h4>Email</h4>
+                                <p>support@kirpichey.ru</p>
+                                <small>Ответ в течение 2 часов</small>
+                                <button class="btn-secondary">Написать</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="support-form-section">
+                        <h3>Отправить запрос в поддержку</h3>
+                        <form class="support-form">
+                            <div class="form-group">
+                                <label for="support-subject">Тема *</label>
+                                <select id="support-subject" required>
+                                    <option value="">Выберите тему</option>
+                                    <option value="delivery">Вопрос по доставке</option>
+                                    <option value="payment">Проблемы с оплатой</option>
+                                    <option value="product">Вопрос о товаре</option>
+                                    <option value="technical">Техническая проблема</option>
+                                    <option value="other">Другое</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="support-order">Номер заказа (если есть)</label>
+                                <input type="text" id="support-order">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="support-message">Описание проблемы *</label>
+                                <textarea id="support-message" rows="5" required placeholder="Подробно опишите вашу проблему..."></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="support-files">Прикрепить файлы</label>
+                                <input type="file" id="support-files" multiple>
+                                <small>Максимальный размер файла: 10MB</small>
+                            </div>
+
+                            <button type="submit" class="btn-primary">Отправить запрос</button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Кирпич Ей</h3>
+                <p>Ваш надежный партнер в строительстве</p>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p>📞 +7 (900) 000-00-00</p>
+                <p>📧 info@kirpichey.ru</p>
+                <p>📍 г. Серпухов, Советская улица, 111</p>
+            </div>
+            <div class="footer-section">
+                <h3>Время работы</h3>
+                <p>Пн-Пт: 9:00-18:00</p>
+                <p>Сб: 10:00-16:00</p>
+                <p>Вс: выходной</p>
+            </div>
+            <div class="footer-section">
+                <div class="footer-links">
+                    <a href="about.html">О нас</a>
+                    <a href="contacts.html">Контакты</a>
+                    <a href="policy.html">Политика конфиденциальности</a>
+                    <a href="eula.html">Условия использования</a>
+                    <a href="support.html">Поддержка</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Кирпич Ей. Все права защищены.
+        </div>
+    </footer>
+    <script src="../scripts/catalog.js"></script>
+</body>
+</html>

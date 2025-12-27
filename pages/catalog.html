@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог - Кирпич Ей</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="main"> 
+            <a href="../index.html"> 
+                <img src="../styles/logo.jpg" alt="На главную" width="160" height="160">
+                <span class="logo-text">Кирпич Ей</span>
+            </a> 
+        </div>
+        
+        <nav class="navigation">
+            <ul>
+                <li><a href="catalog.html" style="background-color: var(--primary-color);">Каталог</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="cart.html">Корзина (<span id="cart-count">0</span>)</a></li>
+                <li><a href="login.html">Вход</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <nav class="breadcrumbs">
+                <a href="../index.html">Главная</a> > 
+                <span>Каталог</span>
+            </nav>
+
+            <h1>Каталог кирпича</h1>
+
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="category">Тип кирпича:</label>
+                    <select id="category">
+                        <option value="">Все типы</option>
+                        <option value="ceramic">Керамический</option>
+                        <option value="silicate">Силикатный</option>
+                        <option value="clinker">Клинкерный</option>
+                        <option value="facing">Облицовочный</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="brand">Производитель:</label>
+                    <select id="brand">
+                        <option value="">Все производители</option>
+                        <option value="braer">BRAER</option>
+                        <option value="wienerberger">Wienerberger</option>
+                        <option value="grasse">ГРАССЕ</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="price">Цена до:</label>
+                    <input type="number" id="price" placeholder="Макс. цена">
+                </div>
+                
+                <button class="btn-primary" onclick="applyFilters()">Применить фильтры</button>
+            </div>
+
+            <div class="products-grid" id="products-container">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Кирпич Ей</h3>
+                <p>Ваш надежный партнер в строительстве</p>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p>📞 +7 (900) 000-00-00</p>
+                <p>📧 info@kirpichey.ru</p>
+                <p>📍 г. Серпухов, Советская улица, 111</p>
+            </div>
+            <div class="footer-section">
+                <h3>Время работы</h3>
+                <p>Пн-Пт: 9:00-18:00</p>
+                <p>Сб: 10:00-16:00</p>
+                <p>Вс: выходной</p>
+            </div>
+            <div class="footer-section">
+                <div class="footer-links">
+                    <a href="about.html">О нас</a>
+                    <a href="contacts.html">Контакты</a>
+                    <a href="policy.html">Политика конфиденциальности</a>
+                    <a href="eula.html">Условия использования</a>
+                    <a href="support.html">Поддержка</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Кирпич Ей. Все права защищены.
+        </div>
+    </footer>
+    <script src="../scripts/catalog.js"></script>
+</body>
+</html>
